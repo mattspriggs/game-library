@@ -66,6 +66,15 @@ export default function GameForm() {
           aria-label="Game platform field"
         />
       </p>
+      <p>
+        <select name="platform" id="platform">
+          <option value="">Please choose a platform</option>
+          <option value="switch">Nintendo Switch</option>
+          <option value="ps5">Playstation 5</option>
+          <option value="xsx">Xbox Series X</option>
+          <option value="pc">PC</option>
+        </select>
+      </p>
       <button>Add Game!</button>
     </form>
   )
