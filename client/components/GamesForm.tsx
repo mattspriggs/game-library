@@ -57,22 +57,26 @@ export default function GameForm() {
       <p>
         <label htmlFor="platform">Which platform?</label>
         <br />
-        <input
-          // type="text"
+        <br />
+        <select
+          name="platform"
           id="platform"
           onChange={handleChange}
           value={form.platform}
-          name="platform"
-          aria-label="Game platform field"
-        />
-      </p>
-      <p>
-        <select name="platform" id="platform">
-          <option value="">Please choose a platform</option>
-          <option value="switch">Nintendo Switch</option>
-          <option value="ps5">Playstation 5</option>
-          <option value="xsx">Xbox Series X</option>
-          <option value="pc">PC</option>
+          aria-label="Game platform selection"
+          required
+        >
+          <option value="">-- Platform --</option>
+          <option value="Nintendo Switch">Nintendo Switch</option>
+          <option value="Playstation 5">Playstation 5</option>
+          <option value="Xbox Series X">Xbox Series X</option>
+          <option value="PC">PC</option>
+          <option value="PC - Steam Deck - Playable">
+            PC - Deck - Playable
+          </option>
+          <option value="PC - Steam Deck - Verified">
+            PC - Deck - Verified
+          </option>
         </select>
       </p>
       <button>Add Game!</button>

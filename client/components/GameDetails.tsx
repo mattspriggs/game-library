@@ -96,16 +96,29 @@ export default function GameDetails() {
               />
             </p>
             <p>
-              <label htmlFor="platform">Platform:</label>
-              <input
-                aria-label="Edit game platform"
-                type="text"
-                id="platform"
+              <label htmlFor="platform">Which platform?</label>
+              <br />
+              <br />
+              <select
                 name="platform"
-                placeholder={gameDetails.platform}
-                value={form.platform}
+                id="platform"
                 onChange={handleChange}
-              />
+                value={form.platform}
+                aria-label="Game platform selection"
+                required
+              >
+                <option value="">-- Platform --</option>
+                <option value="Nintendo Switch">Nintendo Switch</option>
+                <option value="Playstation 5">Playstation 5</option>
+                <option value="Xbox Series X">Xbox Series X</option>
+                <option value="PC">PC</option>
+                <option value="PC - Steam Deck - Playable">
+                  PC - Deck - Playable
+                </option>
+                <option value="PC - Steam Deck - Verified">
+                  PC - Deck - Verified
+                </option>
+              </select>
             </p>
             <button type="submit">Save Edits</button>
             <button onClick={handleCancelEdits}>Cancel Edits</button>
