@@ -1,6 +1,10 @@
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet, useNavigate } from 'react-router-dom'
 
 function App() {
+  const navigate = useNavigate()
+  function handleClick() {
+    navigate('/add')
+  }
   return (
     <>
       <header className="header">
@@ -9,6 +13,7 @@ function App() {
             Video Game Collection
           </Link>
         </h1>
+        <button onClick={handleClick}>Add a Game!</button>
       </header>
       <div>
         <Outlet />

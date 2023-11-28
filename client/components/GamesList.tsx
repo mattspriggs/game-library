@@ -28,8 +28,8 @@ export default function GamesList() {
           </li>
         ))}
       </ul>
-      <h2>Add a game to your collection!</h2>
-      <GamesForm />
+      {/* <h2>Add a game to your collection!</h2>
+      <GamesForm /> */}
     </section>
   )
 }
