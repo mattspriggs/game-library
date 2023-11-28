@@ -1,7 +1,6 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { getGames } from '../apis/games'
 import { useQuery } from '@tanstack/react-query'
-import GamesForm from './GamesForm'
 
 export default function GamesList() {
   const {
@@ -9,6 +8,7 @@ export default function GamesList() {
     isError,
     isLoading,
   } = useQuery({ queryKey: ['games'], queryFn: getGames })
+  const navigate = useNavigate()
   if (isError) {
     return <div>There was an error while getting your games</div>
   }
@@ -16,6 +16,10 @@ export default function GamesList() {
     return <div>Loading your games...</div>
   }
   console.log(gamesList)
+
+  function handleClick() {
+    navigate('/add')
+  }
   return (
     <section className="main">
       <ul>
@@ -30,6 +34,7 @@ export default function GamesList() {
       </ul>
       {/* <h2>Add a game to your collection!</h2>
       <GamesForm /> */}
+      <button onClick={handleClick}>Add a Game!</button>
     </section>
   )
 }
