@@ -3,7 +3,6 @@ export async function up(knex) {
     table.uuid('id').defaultsTo(knex.fn.uuid()).primary
     table.string('title')
     table.string('platform')
-    table.boolean('played').defaultsTo(false)
   })
 }
 
