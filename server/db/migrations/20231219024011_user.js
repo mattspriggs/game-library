@@ -1,8 +1,10 @@
 export async function up(knex) {
   return knex.schema.createTable('user', (table) => {
-    table.increments('id').primary
-    table.string('title')
-    table.string('platform')
+    table.uuid('id').defaultsTo(knex.fn.uuid()).primary
+    table.string('email').unique
+    table.string('password')
+    table.string('username').unique
+    table.boolean('admin').defaultsTo(false)
   })
 }
 
