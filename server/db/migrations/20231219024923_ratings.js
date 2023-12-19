@@ -1,15 +1,13 @@
-/**
- * @param { import("knex").Knex } knex
- * @returns { Promise<void> }
- */
-exports.up = function(knex) {
-  
-};
+export async function up(knex) {
+  return knex.schema.createTable('ratings', (table) => {
+    table.uuid('games_id')
+    table.uuid('platforms_id')
+    table.string('source')
+    table.integer('critic_rating')
+    table.integer('user_rating')
+  })
+}
 
-/**
- * @param { import("knex").Knex } knex
- * @returns { Promise<void> }
- */
-exports.down = function(knex) {
-  
-};
+export async function down(knex) {
+  return knex.schema.dropTable('ratings')
+}
