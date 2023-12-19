@@ -5,6 +5,7 @@ export async function up(knex) {
     table.string('password')
     table.string('username').unique
     table.boolean('admin').defaultsTo(false)
+    table.string('auth0')
   })
 }
 
