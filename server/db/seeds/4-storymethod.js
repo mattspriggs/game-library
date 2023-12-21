@@ -43,5 +43,11 @@ export async function seed(knex) {
       definition:
         'Story that is told by player interaction with the game over time that is made available by game design but is not scripted specifically to be told in a specific way to the player.  Frequently found in more sandbox games such as Minecraft or Dwarf Fortress.',
     },
+    {
+      id: '59c26a93-ce78-4ed8-9652-38cda775de9e',
+      name: 'Karmic results',
+      definition:
+        'Story that will respond to player action and choice and the story path and ending will change due to a balance of the quality of those actions.  For example, Mass Effect and the Paragon (good) and Renegade (evil) system.',
+    },
   ])
 }
