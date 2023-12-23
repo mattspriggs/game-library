@@ -10,5 +10,7 @@ export async function seed(knex) {
   await knex('genre').del()
   await knex('artstyle').del()
   await knex('atmosphere').del()
+  await knex('developers').del()
+  await knex('publishers').del()
   await knex('').del()
 }
