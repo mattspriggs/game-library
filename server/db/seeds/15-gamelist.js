@@ -5,7 +5,7 @@ export async function seed(knex) {
       user_id: '',
       games_id: '',
       platforms_id: '',
-      played: false,
+      status: 'paused',
     },
   ])
 }
