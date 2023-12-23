@@ -7,6 +7,12 @@ export async function seed(knex) {
       developers_id: '',
       name: 'Armored Core VI: The Fires of Rubicon',
       date: '',
+      atmosphere_id: '',
+      artstyle_id: '',
+      genre_id: '',
+      perspective_id: '',
+      difficulty_id: '',
+      structure_id: '',
     },
   ])
 }
