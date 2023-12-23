@@ -4,7 +4,7 @@ export async function up(knex) {
     table.string('name')
     table.string('location')
     table.date('start')
-    table.date('end')
+    table.date('end').defaultsTo('')
   })
 }
 
