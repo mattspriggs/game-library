@@ -4,7 +4,7 @@ export async function seed(knex) {
     {
       user_id: '',
       games_id: '',
-      platfomrs_id: '',
+      platforms_id: '',
       played: false,
     },
   ])

@@ -3,7 +3,7 @@ export async function seed(knex) {
   await knex('ratings').insert([
     {
       games_id: '',
-      platfomrs_id: '',
+      platforms_id: '',
       source: '',
       critic: null,
       user: null,
