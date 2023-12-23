@@ -3,7 +3,7 @@ export async function up(knex) {
     table.uuid('user_id')
     table.uuid('games_id')
     table.uuid('platforms_id')
-    table.boolean('played').defaultsTo(false)
+    table.string('status').defaultsTo('backlog')
   })
 }
 
