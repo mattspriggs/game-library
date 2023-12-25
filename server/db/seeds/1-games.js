@@ -9,7 +9,8 @@ export async function seed(knex) {
       // FromSoftware
       name: 'Armored Core VI: The Fires of Rubicon',
       date: '',
-      atmosphere_id: '',
+      atmosphere_id: '64f08592-9bad-4f44-bfac-057ce1479258',
+      // Dystopian Sci-Fi
       artstyle_id: '',
       genre_id: '',
       perspective_id: '',
