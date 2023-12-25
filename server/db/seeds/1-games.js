@@ -15,7 +15,8 @@ export async function seed(knex) {
       genre_id: '',
       perspective_id: '',
       difficulty_id: '',
-      structure_id: '',
+      structure_id: 'e55f06b1-0585-41fb-ad21-2e7515c7e8a3',
+      // Linear Mission Based
     },
   ])
 }
