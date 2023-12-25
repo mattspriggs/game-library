@@ -11,7 +11,8 @@ export async function seed(knex) {
       date: '',
       atmosphere_id: '64f08592-9bad-4f44-bfac-057ce1479258',
       // Dystopian Sci-Fi
-      artstyle_id: '',
+      artstyle_id: '93a61a15-62f6-4e76-a0a7-baeeeaa06984',
+      // Dark Angular Mech
       genre_id: '',
       perspective_id: '',
       difficulty_id: '',
