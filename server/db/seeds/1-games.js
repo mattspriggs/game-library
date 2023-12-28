@@ -13,8 +13,10 @@ export async function seed(knex) {
       // Dystopian Sci-Fi
       artstyle_id: '93a61a15-62f6-4e76-a0a7-baeeeaa06984',
       // Dark Angular Mech
-      genre_id: '',
-      perspective_id: '',
+      genre_id: '965c93fc-b0a4-45fa-af7a-69765ad8a0fd',
+      // Shooter Mecha Action
+      perspective_id: '46c09d59-34d0-4c1e-bfe1-99496bd7a304',
+      // Third person
       difficulty_id: '',
       structure_id: 'e55f06b1-0585-41fb-ad21-2e7515c7e8a3',
       // Linear Mission Based
