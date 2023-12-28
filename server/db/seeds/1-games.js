@@ -17,7 +17,8 @@ export async function seed(knex) {
       // Shooter Mecha Action
       perspective_id: '46c09d59-34d0-4c1e-bfe1-99496bd7a304',
       // Third person
-      difficulty_id: '',
+      difficulty_id: '8217ab81-0856-4385-8e92-0f56d4c6e446',
+      // Difficult
       structure_id: 'e55f06b1-0585-41fb-ad21-2e7515c7e8a3',
       // Linear Mission Based
     },
