@@ -13,5 +13,17 @@ export async function seed(knex) {
       definition:
         'A game that uses melee weapons to resolve combat conflicts.  Typically melee weapons include things like swords, clubs, hammers, knives, maces, spears, etc and can be a variant like a lightsaber for a sci-fi setting.',
     },
+    {
+      id: 'b6cdc8cf-2377-4623-bb96-dee6d9552a0c',
+      name: 'Complex traversal',
+      definition:
+        'A game that uses a complex form of traversal as a key element in portions of the game such as combat or exploration.',
+    },
+    {
+      id: '9332352f-1489-4b7c-ac98-92bcc31b8e71',
+      name: 'Exploration',
+      definition:
+        'A game that uses exploration as a key element in the such as discovering secrets, items, hidden locations, puzzle solutions, etc.',
+    },
   ])
 }
