@@ -1,0 +1,20 @@
+export async function seed(knex) {
+  // Deletes ALL existing entries
+  await knex('games').del()
+  await knex('users').del()
+  await knex('gamelist').del()
+  await knex('platforms').del()
+  await knex('ratings').del()
+  await knex('story_method').del()
+  await knex('story').del()
+  await knex('difficulty').del()
+  await knex('structure').del()
+  await knex('perspective').del()
+  await knex('genre').del()
+  await knex('artstyle').del()
+  await knex('atmosphere').del()
+  await knex('developers').del()
+  await knex('publishers').del()
+  await knex('gameplay').del()
+  await knex('gameplay_type').del()
+}
