@@ -3,8 +3,8 @@ export async function up(knex) {
     table.uuid('games_id')
     table.uuid('platforms_id')
     table.string('source')
-    table.integer('critic_rating')
-    table.integer('user_rating')
+    table.integer('critic')
+    table.integer('user')
   })
 }
 
