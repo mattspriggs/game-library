@@ -1,7 +1,7 @@
 export async function seed(knex) {
   // Deletes ALL existing entries
   await knex('games').del()
-  await knex('users').del()
+  await knex('user').del()
   await knex('gamelist').del()
   await knex('platforms').del()
   await knex('ratings').del()
